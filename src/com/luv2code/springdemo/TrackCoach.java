@@ -2,6 +2,12 @@ package com.luv2code.springdemo;
 
 public class TrackCoach implements Coach {
 
+    private FortuneService fortuneService;
+
+    public TrackCoach(FortuneService fortuneService) {
+        this.fortuneService = fortuneService;
+    }
+
     //automatically created implementation
     @Override
     public String getDailyWorkout() {
@@ -10,7 +16,7 @@ public class TrackCoach implements Coach {
 
     @Override
     public String getDailyFortune() {
-        return "Happy Hour for You! Congrats!";
+        return "Today is YOUR lucky DAY!";
     }
 
 
