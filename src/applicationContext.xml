@@ -8,17 +8,16 @@
     http://www.springframework.org/schema/context
     http://www.springframework.org/schema/context/spring-context.xsd">
 
-    <bean id="myFortuneService"
+<!--Define the dependency-->
+    <bean id="myFortune"
           class="com.luv2code.springdemo.HappyFortuneService">
     </bean>
 
     <bean id="myCoach"
         class="com.luv2code.springdemo.FinessCoach">
-<!-- additional constructor arg-->
-        <constructor-arg ref="myFortuneService"/>
+<!--Setting up constructor injection. ID is the same like in line 11.-->
+        <constructor-arg ref="myFortune"/>
     </bean>
-
-
 
 
     <bean id="myLoggerConfig"
