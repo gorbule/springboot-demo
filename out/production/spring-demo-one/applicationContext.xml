@@ -9,7 +9,7 @@
     http://www.springframework.org/schema/context/spring-context.xsd">
 
     <bean id="myCoach"
-        class="com.luv2code.springdemo.BaseballCoach">
+        class="com.luv2code.springdemo.FinessCoach">
     </bean>
 
     <bean id="myLoggerConfig"
