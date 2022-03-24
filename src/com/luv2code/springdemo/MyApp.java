@@ -7,7 +7,7 @@ public class MyApp {
         //create the object
 //        Coach theCoach = new BaseballCoach();
 //        Coach theCoach = new TrackCoach();
-        Coach theCoach = new FinessCoach();
+        Coach theCoach = new FitnessCoach();
 
 
         //use the objects
