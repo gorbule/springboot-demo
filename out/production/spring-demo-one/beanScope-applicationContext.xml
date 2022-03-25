@@ -16,9 +16,10 @@
 
     <bean id="myCoach"
         class="com.luv2code.springdemo.BaseballCoach"
-    scope="prototype">
-<!--Setting up constructor injection. ID is the same like in line 11.-->
-        <constructor-arg ref="myFortuneService"></constructor-arg>
+          scope="prototype">
+    <!--line 20 - prototype scope. That means New object For EACH REQUEST. In this case BeanScopeDemoApp result will be FALSE-->
+        <!--Setting up constructor injection. ID is the same like in line 11.-->
+        <constructor-arg ref="myFortuneService"/>
     </bean>
 
 
