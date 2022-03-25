@@ -15,7 +15,8 @@
     </bean>
 
     <bean id="myCoach"
-        class="com.luv2code.springdemo.BaseballCoach">
+        class="com.luv2code.springdemo.BaseballCoach"
+    scope="prototype">
 <!--Setting up constructor injection. ID is the same like in line 11.-->
         <constructor-arg ref="myFortuneService"></constructor-arg>
     </bean>
