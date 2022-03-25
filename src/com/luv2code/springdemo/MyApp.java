@@ -13,5 +13,6 @@ public class MyApp {
         //use the objects
 //        System.out.println(theCoach.getDailyWorkout());
         System.out.println(theCoach.getDailyWorkout());
+        System.out.println(theCoach.getDailyFortune());
     }
 }

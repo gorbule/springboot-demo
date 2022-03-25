@@ -9,6 +9,6 @@ public class FitnessCoach implements Coach {
 
     @Override
     public String getDailyFortune() {
-        return "Lucky Day For YOU :)";
+        return "Lucky Day For YOU :) ***";
     }
 }
