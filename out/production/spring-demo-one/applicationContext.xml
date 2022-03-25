@@ -8,6 +8,8 @@
     http://www.springframework.org/schema/context
     http://www.springframework.org/schema/context/spring-context.xsd">
 
+<!--Load the sport.properties file-->
+    <context:property-placeholder location="classpath:sport.properties"/>
 <!--Define the dependency-->
     <bean id="myFortuneService"
           class="com.luv2code.springdemo.HappyFortuneService">
@@ -29,10 +31,14 @@
         <!--Setter Injection-->
         <property name="FortuneService" ref="myFortuneService"/>
 
-        <!--Literal Value Injection-->
-        <property name="emailAddress" value="thebestcoach@gmail.com"/>
-        <property name="team" value="SunnyBunny"/>
+        <!--Literal Value Injection. Hardcoded Data-->
 
+<!--        <property name="emailAddress" value="thebestcoach@gmail.com"/>-->
+<!--        <property name="team" value="SunnyBunny"/>-->
+
+<!--        Using an Property file sport.properties -->
+        <property name="emailAddress" value="${foo.email}"/>
+        <property name="team" value="${foo.team}"/>
     </bean>
 
 </beans>
